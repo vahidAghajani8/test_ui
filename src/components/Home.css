@@ -1,0 +1,64 @@
+/* Ensure higher specificity to override Ant Design styles */
+.ant-form-item.compact-form-item {
+    margin-bottom: 4px !important; /* Override Ant Design's margin-bottom */
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-start {
+    align-items: flex-start;
+  }
+  
+  .space-y-4 > * + * {
+    margin-top: 16px;
+  }
+
+  .main-nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+  }
+  
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .stat-cards-item {
+    text-align: center; /* Center text inside each card */
+    margin: 0 auto; /* Horizontally center each card */
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ant-row {
+    text-align: center; /* Center the row content */
+  }
+  
+  @media (max-width: 576px) {
+    .ant-col {
+      display: flex;
+      justify-content: center; /* Center the columns */
+      align-items: center; /* Optional: Center vertically */
+    }
+  }
+  
+  #searchInput {
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 576px) {
+    #searchInput {
+      font-size: 14px;
+    }
+  }
+  
+  
+  
